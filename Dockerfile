@@ -11,8 +11,8 @@ RUN wget -q https://github.com/gohugoio/hugo/releases/download/v${HUGOVERSION}/h
     && rm -rf hugo_${HUGOVERSION}_Linux-64bit.tar.gz hugo_binary \
     && hugo version
     
-RUN git config --global user.email "autodeploy@admin.com" \
-    && git config --global user.name "autodeploy"
+RUN git config --global user.email "seagullbird@admin.com" \
+    && git config --global user.name "seagullbird"
 
 EXPOSE 1313
 

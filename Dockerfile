@@ -11,6 +11,6 @@ RUN curl https://github.com/gohugoio/hugo/releases/download/v${HUGOVERSION}/hugo
     && rm -rf hugo_${HUGOVERSION}_Linux-64bit.tar.gz hugo_binary \
     && hugo version
 
-WORK_DIR /root
+WORKDIR /root
 
 CMD ["sh"]

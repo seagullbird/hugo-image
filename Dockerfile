@@ -11,6 +11,8 @@ RUN wget -q https://github.com/gohugoio/hugo/releases/download/v${HUGOVERSION}/h
     && rm -rf hugo_${HUGOVERSION}_Linux-64bit.tar.gz hugo_binary \
     && hugo version
 
+EXPOSE 1313
+
 WORKDIR /root
 
 CMD ["sh"]

@@ -2,7 +2,7 @@ FROM alpine:latest
 
 ARG HUGOVERSION=0.32.3
 
-RUN apk add --no-cache tar && apk add --update wget
+RUN apk add --no-cache tar git && apk add --update wget
 
 RUN wget -q https://github.com/gohugoio/hugo/releases/download/v${HUGOVERSION}/hugo_${HUGOVERSION}_Linux-64bit.tar.gz \
     && mkdir hugo_binary \
